@@ -166,9 +166,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL       &kp AT           &kp HASH                     &kp DLLR                 &kp PIPE            &kp LESS_THAN     &kp LEFT_BRACKET      &kp RA(RIGHT_BRACKET)      &kp PLUS             &gmail
-        &kp CARET      &kp AMPS         &mt RA(LEFT_SHIFT) ASTERISK  &mt LCTRL DOUBLE_QUOTES  &kp SINGLE_QUOTE    &kp KP_EQUAL      &kp LEFT_PARENTHESIS  &kp RA(RIGHT_PARENTHESIS)  &mt RA(UNDER) MINUS  &trans
-&trans  &kp RA(GRAVE)  &kp RA(PERCENT)  &kp EXCL                     &kp SLASH                &kp BACKSLASH       &kp GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE            &kp TILDE            &trans  &trans
+        &kp EXCL       &kp AT           &kp HASH                     &kp DLLR                 &kp PIPE            &kp LESS_THAN     &kp LEFT_BRACKET      &kp RA(RIGHT_BRACKET)      &kp PLUS         &gmail
+        &kp CARET      &kp AMPS         &mt RA(LEFT_SHIFT) ASTERISK  &mt LCTRL DOUBLE_QUOTES  &kp SINGLE_QUOTE    &kp KP_EQUAL      &kp LEFT_PARENTHESIS  &kp RA(RIGHT_PARENTHESIS)  &mt UNDER MINUS  &trans
+&trans  &kp RA(GRAVE)  &kp RA(PERCENT)  &kp EXCL                     &kp SLASH                &kp BACKSLASH       &kp GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE            &kp TILDE        &trans  &trans
                                         &trans                       &trans                   &trans              &trans            &trans                &trans
             >;
         };
