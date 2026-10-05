@@ -103,9 +103,9 @@
             bindings = <&kp MINUS>, <&kp PLUS>;
         };
 
-        toggle_layer: toggle_layer {
+        tgl_layer: tgl_layer {
             compatible = "zmk,behavior-hold-tap";
-            label = "TOGGLE_LAYER";
+            label = "tgl_layer";
             bindings = <&tog>, <&kp>;
 
             #binding-cells = <2>;
