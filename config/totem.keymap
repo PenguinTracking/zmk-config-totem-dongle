@@ -136,10 +136,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                      &kp Q       &kp W  &kp E             &kp R               &kp T      &kp Y                &kp U                &kp I                  &kp O             &lt 3 P
-                      &kp A       &kp S  &mt LEFT_SHIFT D  &mt LEFT_CONTROL F  &kp G      &kp H                &kp J                &kp K                  &kp L             &td_semi
-&mt LEFT_COMMAND ESC  &mt LALT Z  &kp X  &kp C             &lt 1 V             &kp B      &mt LC(LS(LA(K))) N  &mt RIGHT_CONTROL M  &mt RIGHT_SHIFT COMMA  &mt LC(B) PERIOD  &kp RIGHT_SHIFT  &kp LA(LC(SPACE))
-                                         &lt 4 ESC         &lt 2 ENTER         &kp TAB    &kp BACKSPACE        &lt 5 SPACE          &td_minus
+                      &tgl_layer 6 Q  &kp W  &kp E             &kp R               &kp T      &kp Y                &kp U                &kp I                  &kp O             &lt 3 P
+                      &kp A           &kp S  &mt LEFT_SHIFT D  &mt LEFT_CONTROL F  &kp G      &kp H                &kp J                &kp K                  &kp L             &td_semi
+&mt LEFT_COMMAND ESC  &mt LALT Z      &kp X  &kp C             &lt 1 V             &kp B      &mt LC(LS(LA(K))) N  &mt RIGHT_CONTROL M  &mt RIGHT_SHIFT COMMA  &mt LC(B) PERIOD  &kp RIGHT_SHIFT  &kp LA(LC(SPACE))
+                                             &lt 4 ESC         &lt 2 ENTER         &kp TAB    &kp BACKSPACE        &lt 5 SPACE          &td_minus
             >;
         };
 
@@ -259,10 +259,10 @@
 
         Gallium_layer {
             bindings = <
-        &kp B  &kp L  &kp D   &kp C   &kp V     &kp J   &kp Y   &kp O   &kp U   &trans
-        &kp N  &kp R  &kp T   &kp S   &kp G     &kp P   &kp H   &kp A   &kp E   &kp I
-&trans  &kp X  &kp Q  &kp M   &kp W   &kp Z     &kp K   &kp F   &trans  &trans  &trans  &trans
-                      &trans  &trans  &trans    &trans  &trans  &trans
+        &tgl_layer 0 B  &kp L  &kp D   &kp C   &kp V     &kp J   &kp Y   &kp O   &kp U   &trans
+        &kp N           &kp R  &kp T   &kp S   &kp G     &kp P   &kp H   &kp A   &kp E   &kp I
+&trans  &kp X           &kp Q  &kp M   &kp W   &kp Z     &kp K   &kp F   &trans  &trans  &trans  &trans
+                               &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
