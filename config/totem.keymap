@@ -102,16 +102,6 @@
             #binding-cells = <0>;
             bindings = <&kp MINUS>, <&kp PLUS>;
         };
-
-        toggle_layer: toggle_layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TOGGLE_LAYER";
-            bindings = <&tog>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-        };
     };
 
     keymap {
