@@ -259,7 +259,7 @@
 
         Gallium_layer {
             bindings = <
-        &tgl_layer 0 B  &kp L  &kp D   &kp C   &kp V     &kp J   &kp Y   &kp O   &kp U   &trans
+        &tgl_layer 6 B  &kp L  &kp D   &kp C   &kp V     &kp J   &kp Y   &kp O   &kp U   &trans
         &kp N           &kp R  &kp T   &kp S   &kp G     &kp P   &kp H   &kp A   &kp E   &kp I
 &trans  &kp X           &kp Q  &kp M   &kp W   &kp Z     &kp K   &kp F   &trans  &trans  &trans  &trans
                                &trans  &trans  &trans    &trans  &trans  &trans
