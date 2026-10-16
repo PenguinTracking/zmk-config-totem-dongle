@@ -154,10 +154,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                      &tgl_layer 5 Q  &kp W  &kp E                              &kp R               &kp T        &kp Y                &kp U                &kp I                            &kp O       &kp P
-                      &kp A           &kp S  &mt LEFT_SHIFT D                   &mt LEFT_CONTROL F  &kp G        &kp H                &kp J                &kp K                            &kp L       &td_semi
-&mt LEFT_COMMAND ESC  &mt LALT Z      &kp X  &kp C                              &lt 1 V             &kp B        &mt LC(LS(LA(K))) N  &mt RIGHT_CONTROL M  &mt RIGHT_SHIFT COMMA            &kp PERIOD  &kp RIGHT_SHIFT  &kp LA(LC(SPACE))
-                                             &sticky_key_or_layer 1 LEFT_SHIFT  &lt 2 ENTER         &lt 3 TAB    &lt 3 BACKSPACE      &lt 4 SPACE          &sticky_layer_or_key LEFT_ALT 2
+                      &tgl_layer 5 Q  &kp W       &kp E                              &kp R               &kp T        &kp Y                &kp U                &kp I                            &kp O            &kp P
+                      &mt LALT A      &mt LGUI S  &mt LEFT_SHIFT D                   &mt LEFT_CONTROL F  &kp G        &kp H                &kp J                &kp K                            &kp L            &td_semi
+&mt LEFT_COMMAND ESC  &kp Z           &kp X       &kp C                              &lt 1 V             &kp B        &mt LC(LS(LA(K))) N  &mt RIGHT_CONTROL M  &mt RIGHT_SHIFT COMMA            &mt LGUI PERIOD  &kp LALT  &kp LA(LC(SPACE))
+                                                  &sticky_key_or_layer 1 LEFT_SHIFT  &lt 2 ENTER         &lt 3 TAB    &lt 3 BACKSPACE      &lt 4 SPACE          &sticky_layer_or_key LEFT_ALT 2
             >;
         };
 
@@ -234,10 +234,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp F1  &kp F2   &kp F3   &kp F4   &trans    &trans  &trans  &trans  &trans  &trans
-        &kp F5  &kp F6   &kp F7   &kp F8   &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans   &trans   &trans    &trans  &trans  &trans
+        &kp F1  &kp F2   &kp F3   &kp F4   &kp LG(Z)    &trans  &trans  &trans  &trans  &trans
+        &kp F5  &kp F6   &kp F7   &kp F8   &kp LG(C)    &trans  &trans  &trans  &trans  &trans
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &kp LG(V)    &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans   &trans   &trans       &trans  &trans  &trans
             >;
         };
 
