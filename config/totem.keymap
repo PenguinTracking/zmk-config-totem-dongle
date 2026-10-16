@@ -130,6 +130,16 @@
             tapping-term-ms = <300>;
             flavor = "tap-preferred";
         };
+
+        slow_mod_tap: slow_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SLOW_MOD_TAP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <300>;
+        };
     };
 
     keymap {
@@ -154,10 +164,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                      &tgl_layer 5 Q  &kp W       &kp E                              &kp R               &kp T        &kp Y                &kp U                &kp I                            &kp O            &kp P
-                      &mt LALT A      &mt LGUI S  &mt LEFT_SHIFT D                   &mt LEFT_CONTROL F  &kp G        &kp H                &kp J                &kp K                            &kp L            &td_semi
-&mt LEFT_COMMAND ESC  &kp Z           &kp X       &kp C                              &lt 1 V             &kp B        &mt LC(LS(LA(K))) N  &mt RIGHT_CONTROL M  &mt RIGHT_SHIFT COMMA            &mt LGUI PERIOD  &kp LALT  &kp LA(LC(SPACE))
-                                                  &sticky_key_or_layer 1 LEFT_SHIFT  &lt 2 ENTER         &lt 3 TAB    &lt 3 BACKSPACE      &lt 4 SPACE          &sticky_layer_or_key LEFT_ALT 2
+                      &tgl_layer 5 Q        &kp W                 &kp E                              &kp R               &kp T        &kp Y                &kp U                &kp I                            &kp O                      &kp P
+                      &slow_mod_tap LALT A  &slow_mod_tap LGUI S  &mt LEFT_SHIFT D                   &mt LEFT_CONTROL F  &kp G        &kp H                &kp J                &kp K                            &kp L                      &td_semi
+&mt LEFT_COMMAND ESC  &kp Z                 &kp X                 &kp C                              &lt 1 V             &kp B        &mt LC(LS(LA(K))) N  &mt RIGHT_CONTROL M  &mt RIGHT_SHIFT COMMA            &slow_mod_tap LGUI PERIOD  &kp LALT  &kp LA(LC(SPACE))
+                                                                  &sticky_key_or_layer 1 LEFT_SHIFT  &lt 2 ENTER         &lt 3 TAB    &kp BACKSPACE        &lt 4 SPACE          &sticky_layer_or_key LEFT_ALT 2
             >;
         };
 
