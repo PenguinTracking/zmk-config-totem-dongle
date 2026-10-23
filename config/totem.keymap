@@ -262,10 +262,10 @@
 
         Gallium {
             bindings = <
-        &tgl_layer 5 B  &kp L  &kp D   &kp C   &kp V     &kp J   &kp Y   &kp O   &kp U   &trans
-        &kp N           &kp R  &kp T   &kp S   &kp G     &kp P   &kp H   &kp A   &kp E   &kp I
-&trans  &kp X           &kp Q  &kp M   &kp W   &kp Z     &kp K   &kp F   &trans  &trans  &td_semi  &trans
-                               &trans  &trans  &trans    &trans  &trans  &trans
+        &tgl_layer 5 B        &kp L                 &kp D        &kp C        &kp V     &kp J                &kp Y        &kp O   &kp U   &td_semi
+        &slow_mod_tap LALT N  &slow_mod_tap LGUI R  &mt LSHFT T  &mt LCTRL S  &kp G     &kp P                &kp H        &kp A   &kp E   &kp I
+&trans  &kp X                 &kp Q                 &kp M        &lt 1 W      &kp Z     &mt LS(LC(LA(K))) K  &mt LCTRL F  &trans  &trans  &kp LALT  &trans
+                                                    &trans       &trans       &trans    &trans               &trans       &trans
             >;
         };
     };
