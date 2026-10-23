@@ -81,7 +81,7 @@
         tmux_layer: tmux_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(B) &sl 1>;
+            bindings = <&kp LC(B) &sl 2>;
             label = "TMUX_LAYER";
         };
     };
@@ -164,14 +164,21 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                      &tgl_layer 5 Q        &kp W                 &kp E                              &kp R               &kp T        &kp Y                &kp U                &kp I                            &kp O                      &kp P
+                      &tgl_layer 1 Q        &kp W                 &kp E                              &kp R               &kp T        &kp Y                &kp U                &kp I                            &kp O                      &kp P
                       &slow_mod_tap LALT A  &slow_mod_tap LGUI S  &mt LEFT_SHIFT D                   &mt LEFT_CONTROL F  &kp G        &kp H                &kp J                &kp K                            &kp L                      &td_semi
-&mt LEFT_COMMAND ESC  &kp Z                 &kp X                 &kp C                              &lt 1 V             &kp B        &mt LC(LS(LA(K))) N  &mt RIGHT_CONTROL M  &mt RIGHT_SHIFT COMMA            &slow_mod_tap LGUI PERIOD  &kp LALT  &kp LA(LC(SPACE))
-                                                                  &sticky_key_or_layer 1 LEFT_SHIFT  &lt 2 ENTER         &lt 3 TAB    &kp BACKSPACE        &lt 4 SPACE          &sticky_layer_or_key LEFT_ALT 2
+&mt LEFT_COMMAND ESC  &kp Z                 &kp X                 &kp C                              &lt 2 V             &kp B        &mt LC(LS(LA(K))) N  &mt RIGHT_CONTROL M  &mt RIGHT_SHIFT COMMA            &slow_mod_tap LGUI PERIOD  &kp LALT  &kp LA(LC(SPACE))
+                                                                  &sticky_key_or_layer 2 LEFT_SHIFT  &lt 3 ENTER         &lt 4 TAB    &kp BACKSPACE        &lt 5 SPACE          &sticky_layer_or_key LEFT_ALT 3
             >;
         };
 
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+        Gallium {
+            bindings = <
+        &tgl_layer 1 B        &kp L                 &kp D        &kp C        &kp V     &kp J                &kp Y        &kp O   &kp U   &td_semi
+        &slow_mod_tap LALT N  &slow_mod_tap LGUI R  &mt LSHFT T  &mt LCTRL S  &kp G     &kp P                &kp H        &kp A   &kp E   &kp I
+&trans  &kp X                 &kp Q                 &kp M        &lt 2 W      &kp Z     &mt LS(LC(LA(K))) K  &mt LCTRL F  &trans  &trans  &kp LALT  &trans
+                                                    &trans       &trans       &trans    &trans               &trans       &trans
+            >;
+        };
 
         num {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -197,8 +204,6 @@
             >;
         };
 
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
         sym {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
@@ -222,10 +227,6 @@
                                 &trans                       &trans                   &trans              &trans            &trans                       &trans
             >;
         };
-
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         Fn {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -257,15 +258,6 @@
         &trans  &trans  &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN  &kp HOME                    &kp LEFT_ARROW    &kp DOWN         &kp UP_ARROW  &kp RIGHT  &kp K_VOLUME_DOWN
 &trans  &trans  &trans  &trans                &kp K_MUTE         &kp END                     &kp LEFT_COMMAND  &kp LC(LS(TAB))  &kp LC(TAB)   &trans     &kp K_MUTE         &trans
                         &trans                &trans             &trans                      &trans            &trans           &trans
-            >;
-        };
-
-        Gallium {
-            bindings = <
-        &tgl_layer 5 B        &kp L                 &kp D        &kp C        &kp V     &kp J                &kp Y        &kp O   &kp U   &td_semi
-        &slow_mod_tap LALT N  &slow_mod_tap LGUI R  &mt LSHFT T  &mt LCTRL S  &kp G     &kp P                &kp H        &kp A   &kp E   &kp I
-&trans  &kp X                 &kp Q                 &kp M        &lt 1 W      &kp Z     &mt LS(LC(LA(K))) K  &mt LCTRL F  &trans  &trans  &kp LALT  &trans
-                                                    &trans       &trans       &trans    &trans               &trans       &trans
             >;
         };
     };
