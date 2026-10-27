@@ -35,14 +35,14 @@
             timeout-ms = <50>;
             key-positions = <12 13>;
             bindings = <&kp ESC>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         question {
             bindings = <&kp QUESTION>;
             key-positions = <6 7>;
             timeout-ms = <50>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         left_cmd {
@@ -54,19 +54,20 @@
             bindings = <&kp LG(C)>;
             key-positions = <23 24>;
             timeout-ms = <50>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         Paste {
             bindings = <&kp LG(V)>;
             key-positions = <24 25>;
             timeout-ms = <50>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         tnmux {
             bindings = <&tmux_layer>;
             key-positions = <14 13>;
+            layers = <0 1>;
         };
     };
 
