@@ -165,19 +165,19 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                      &tgl_layer 1 Q        &kp W                 &kp E                              &kp R               &kp T        &kp Y                &kp U                &kp I                            &kp O                      &kp P
-                      &slow_mod_tap LALT A  &slow_mod_tap LGUI S  &mt LEFT_SHIFT D                   &mt LEFT_CONTROL F  &kp G        &kp H                &kp J                &kp K                            &kp L                      &td_semi
-&mt LEFT_COMMAND ESC  &kp Z                 &kp X                 &kp C                              &lt 2 V             &kp B        &mt LC(LS(LA(K))) N  &mt RIGHT_CONTROL M  &mt RIGHT_SHIFT COMMA            &slow_mod_tap LGUI PERIOD  &kp LALT  &kp LA(LC(SPACE))
-                                                                  &sticky_key_or_layer 2 LEFT_SHIFT  &lt 3 ENTER         &lt 4 TAB    &kp BACKSPACE        &lt 5 SPACE          &sticky_layer_or_key LEFT_ALT 3
+                      &tgl_layer 1 Q        &kp W                 &kp E                              &kp R               &kp T        &kp Y                       &kp U                &kp I                            &kp O                      &kp P
+                      &slow_mod_tap LALT A  &slow_mod_tap LGUI S  &mt LEFT_SHIFT D                   &mt LEFT_CONTROL F  &kp G        &kp H                       &kp J                &kp K                            &kp L                      &td_semi
+&mt LEFT_COMMAND ESC  &kp Z                 &kp X                 &kp C                              &lt 2 V             &kp B        &mt LS(LA(LEFT_CONTROL)) N  &mt RIGHT_CONTROL M  &mt RIGHT_SHIFT COMMA            &slow_mod_tap LGUI PERIOD  &kp LALT  &kp LA(LC(SPACE))
+                                                                  &sticky_key_or_layer 2 LEFT_SHIFT  &lt 3 ENTER         &lt 4 TAB    &kp BACKSPACE               &lt 5 SPACE          &sticky_layer_or_key LEFT_ALT 3
             >;
         };
 
         Gallium {
             bindings = <
-        &tgl_layer 1 B        &kp L                 &kp D        &kp C        &kp V     &kp J                &kp Y        &kp O   &kp U   &td_semi
-        &slow_mod_tap LALT N  &slow_mod_tap LGUI R  &mt LSHFT T  &mt LCTRL S  &kp G     &kp P                &kp H        &kp A   &kp E   &kp I
-&trans  &kp X                 &kp Q                 &kp M        &lt 2 W      &kp Z     &mt LS(LC(LA(K))) K  &mt LCTRL F  &trans  &trans  &kp LALT  &trans
-                                                    &trans       &trans       &trans    &trans               &trans       &trans
+        &tgl_layer 1 B        &kp L                 &kp D        &kp C        &kp V     &kp J                       &kp Y        &kp O   &kp U   &td_semi
+        &slow_mod_tap LALT N  &slow_mod_tap LGUI R  &mt LSHFT T  &mt LCTRL S  &kp G     &kp P                       &kp H        &kp A   &kp E   &kp I
+&trans  &kp X                 &kp Q                 &kp M        &lt 2 W      &kp Z     &mt LS(LA(LEFT_CONTROL)) K  &mt LCTRL F  &trans  &trans  &kp LALT  &trans
+                                                    &trans       &trans       &trans    &trans                      &trans       &trans
             >;
         };
 
